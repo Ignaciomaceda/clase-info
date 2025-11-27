@@ -15,7 +15,7 @@ use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
-//aqui debes poner use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Select;
 
 class PedidodetallesRelationManager extends RelationManager
 {
@@ -25,7 +25,7 @@ class PedidodetallesRelationManager extends RelationManager
     {
         return $schema
             ->components([
-                Slect::make('producto_id')
+                Select::make('producto_id')
                 ->label('Producto')
                 ->relationship('producto','nombre')
                     ->required(),
