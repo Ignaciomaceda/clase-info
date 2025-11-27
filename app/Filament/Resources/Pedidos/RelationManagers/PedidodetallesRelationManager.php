@@ -15,6 +15,7 @@ use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Schemas\Schema;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
+//aqui debes poner use Filament\Forms\Components\Select;
 
 class PedidodetallesRelationManager extends RelationManager
 {
@@ -29,6 +30,8 @@ class PedidodetallesRelationManager extends RelationManager
                 ->relationship('producto','nombre')
                     ->required(),
             TextInput::make('cantidad'),
+            //aqui te falta poner TextInput::make('nombre'),TextInput::make('subtotal'),
+
             ]);
     }
 

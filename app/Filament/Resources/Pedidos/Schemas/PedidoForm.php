@@ -21,7 +21,9 @@ class PedidoForm
                     ->numeric(),
                 TextInput::make('fecha')
                     ->required(),
-                TextInput::make('estatus')
+
+                //en la siguiente linea es Select en lugar de TextINput
+                Select::make('estatus')
                     ->options([
                         'Pendiente' => 'Pendiente',
                         'Cancelado' => 'Cancelado',
